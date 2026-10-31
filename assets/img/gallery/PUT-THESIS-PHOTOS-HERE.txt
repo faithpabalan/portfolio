@@ -1,0 +1,2 @@
+Put your thesis photos here (JPG, PNG, or WebP, under ~400 KB each).
+Then set their paths in assets/js/content.js under thesis.gallery.

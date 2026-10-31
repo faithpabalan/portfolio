@@ -1,0 +1,1 @@
+Put project photos here, then set projects[].image in assets/js/content.js.
