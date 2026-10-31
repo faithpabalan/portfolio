@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nerrylle Faith Pabalan | Computer Engineering Portfolio</title>
+  <meta name="description" content="Portfolio of Nerrylle Faith Pabalan, a Computer Engineering student at STI College Calamba. Featured thesis: a Smart Bi-Directional Philippine Currency Exchanger for bills and coins.">
+  <meta name="author" content="Nerrylle Faith Pabalan">
+  <meta name="theme-color" content="#CDE2F8">
+
+  <!-- Social sharing preview. After publishing, change og:url and og:image to full https:// links (see README). -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nerrylle Faith Pabalan | Computer Engineering Portfolio">
+  <meta property="og:description" content="Computer Engineering student building small machines for everyday problems. Featured thesis: a bi-directional Philippine bills-and-coins exchanger.">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Nunito:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Apply a saved theme before first paint so the page doesn't flash.
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var t = localStorage.getItem('nf-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav wrap" aria-label="Main">
+      <a class="brand" href="#home" aria-label="Back to the top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+        </span>
+        <span class="brand-text" data-bind="firstName">Nerrylle</span><span class="brand-sub">.cpe</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#thesis">Thesis</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-tools">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to night mode">
+          <svg class="ic ic-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+          <svg class="ic ic-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <svg class="ic ic-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="ic ic-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <svg class="hero-traces" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true">
+        <path class="trace" d="M-10 70 H60 V210 H100"/>
+        <path class="trace" d="M-10 400 H80 V480 H120"/>
+        <path class="trace" d="M1210 40 H1150 V130 H1110"/>
+        <path class="trace" d="M1210 440 H1130 V360 H1095"/>
+        <circle class="node" cx="100" cy="210" r="5"/>
+        <circle class="node" cx="120" cy="480" r="5"/>
+        <circle class="node" cx="1110" cy="130" r="5"/>
+        <circle class="node" cx="1095" cy="360" r="5"/>
+      </svg>
+      <span class="float-deco s1" aria-hidden="true">✦</span>
+      <span class="float-deco s2" aria-hidden="true">♡</span>
+      <span class="float-deco s3" aria-hidden="true">✿</span>
+      <span class="float-deco s4" aria-hidden="true">✧</span>
+
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="hand hello">hi there, I'm</p>
+          <h1 id="hero-title" class="hero-name"><span data-bind="fullName">Nerrylle Faith Pabalan</span></h1>
+          <p class="hero-role">
+            <span data-bind="role">Computer Engineering Student</span>
+            <span class="dot" aria-hidden="true">·</span>
+            <span data-bind="school">STI College Calamba</span>
+            <span class="dot" aria-hidden="true">·</span>
+            <span>Class of <span data-bind="gradYear">2027</span></span>
+          </p>
+          <p class="hero-tagline" data-bind="tagline">I build small machines for everyday problems, like never having exact change.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#thesis">Explore My Thesis</a>
+            <a class="btn btn-soft" href="#projects">View My Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+          <p class="open-to" id="open-to"></p>
+        </div>
+
+        <div class="hero-art">
+          <div class="bubble hand" id="mascot-bubble" aria-live="polite">Hi! Need change? ♡</div>
+          <button class="mascot" id="mascot" type="button" aria-label="Say hi to Changey, a cartoon version of my thesis kiosk">
+            <svg viewBox="0 0 260 300" aria-hidden="true">
+              <ellipse class="m-shadow" cx="130" cy="284" rx="78" ry="9"/>
+              <line class="m-line" x1="130" y1="42" x2="130" y2="20"/>
+              <path class="m-star" d="M130 4c.9 6 2.6 7.7 8.6 8.6-6 .9-7.7 2.6-8.6 8.6-.9-6-2.6-7.7-8.6-8.6 6-.9 7.7-2.6 8.6-8.6z"/>
+              <rect class="m-foot" x="72" y="252" width="34" height="22" rx="10"/>
+              <rect class="m-foot" x="154" y="252" width="34" height="22" rx="10"/>
+              <rect class="m-body" x="44" y="40" width="172" height="222" rx="36"/>
+              <rect class="m-screen" x="68" y="64" width="124" height="92" rx="20"/>
+              <g class="m-eyes">
+                <ellipse class="m-face" cx="108" cy="102" rx="7" ry="9"/>
+                <ellipse class="m-face" cx="152" cy="102" rx="7" ry="9"/>
+              </g>
+              <path class="m-smile" d="M116 122 Q130 134 144 122"/>
+              <ellipse class="m-cheek" cx="90" cy="122" rx="9" ry="5"/>
+              <ellipse class="m-cheek" cx="170" cy="122" rx="9" ry="5"/>
+              <g class="m-bill">
+                <rect x="96" y="162" width="68" height="20" rx="3"/>
+                <circle cx="130" cy="172" r="4"/>
+              </g>
+              <rect class="m-slot" x="88" y="174" width="84" height="9" rx="4.5"/>
+              <rect class="m-slot" x="114" y="196" width="32" height="7" rx="3.5"/>
+              <text class="m-label" x="130" y="217" text-anchor="middle">bills ⇄ coins</text>
+              <rect class="m-tray" x="84" y="224" width="92" height="24" rx="11"/>
+              <g class="m-coins">
+                <circle class="m-coin c1" cx="112" cy="236" r="8"/>
+                <circle class="m-coin c2" cx="130" cy="236" r="8"/>
+                <circle class="m-coin c3" cx="148" cy="236" r="8"/>
+              </g>
+              <path class="m-heart" d="M196 200s-9-5.6-9-12.6a5 5 0 0 1 9-3.3 5 5 0 0 1 9 3.3c0 7-9 12.6-9 12.6z"/>
+            </svg>
+          </button>
+          <p class="mascot-hint hand">tap Changey ↑</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <figure class="polaroid about-photo reveal">
+          <span class="tape" aria-hidden="true"></span>
+          <div class="polaroid-img" id="about-photo"></div>
+          <figcaption class="hand" id="about-caption">that's me ♡</figcaption>
+        </figure>
+
+        <div class="about-copy">
+          <p class="eyebrow hand">a little about me</p>
+          <h2 id="about-title" class="section-title">I like it when ideas start to move.</h2>
+          <div class="prose" id="about-text"></div>
+          <ul class="facts" id="about-facts" aria-label="Quick facts"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THESIS ============ -->
+    <section class="section thesis" id="thesis" aria-labelledby="thesis-title">
+      <div class="wrap">
+        <header class="thesis-head reveal">
+          <p class="eyebrow hand">featured thesis ✿ the main project</p>
+          <h2 id="thesis-title" class="thesis-title" data-bind-thesis="title">Smart Bi-Directional Philippine Currency Exchanger for Bills and Coins</h2>
+          <p class="thesis-lede" data-bind-thesis="lede"></p>
+          <ul class="meta-chips" id="thesis-meta" aria-label="Project details"></ul>
+        </header>
+
+        <div class="notebook">
+          <nav class="chapter-nav" aria-label="Thesis chapters">
+            <p class="chapter-nav-title hand">chapters</p>
+            <ol id="chapter-list"></ol>
+          </nav>
+
+          <div class="chapters">
+
+            <!-- 1. Problem -->
+            <article class="chapter" id="ch-problem" aria-labelledby="ch-problem-t">
+              <p class="ch-num">Chapter 1</p>
+              <h3 id="ch-problem-t">The Problem</h3>
+              <div class="prose" id="problem-text"></div>
+              <ul class="sticky-notes" id="problem-notes"></ul>
+            </article>
+
+            <!-- 2. Solution -->
+            <article class="chapter" id="ch-solution" aria-labelledby="ch-solution-t">
+              <p class="ch-num">Chapter 2</p>
+              <h3 id="ch-solution-t">Our Solution</h3>
+              <div class="solution-grid">
+                <div class="prose" id="solution-text"></div>
+                <div class="swap-visual" aria-hidden="true">
+                  <div class="swap-item">
+                    <span class="swap-icon" data-icon="bill"></span>
+                    <span class="hand">bills</span>
+                  </div>
+                  <div class="swap-arrows">
+                    <span class="arr arr-r">→</span>
+                    <span class="arr arr-l">←</span>
+                  </div>
+                  <div class="swap-item">
+                    <span class="swap-icon" data-icon="coins"></span>
+                    <span class="hand">coins</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3. How it works -->
+            <article class="chapter" id="ch-how" aria-labelledby="ch-how-t">
+              <p class="ch-num">Chapter 3</p>
+              <h3 id="ch-how-t">How It Works</h3>
+              <p class="ch-intro">Pick a direction, then click through each step of a transaction.</p>
+
+              <div class="mode-tabs" role="tablist" aria-label="Exchange direction">
+                <button class="mode-tab" role="tab" id="tab-b2c" aria-controls="flow-panel" aria-selected="true" data-mode="billsToCoins" type="button">Bills → Coins</button>
+                <button class="mode-tab" role="tab" id="tab-c2b" aria-controls="flow-panel" aria-selected="false" data-mode="coinsToBills" type="button" tabindex="-1">Coins → Bills</button>
+              </div>
+
+              <div class="flow" id="flow-panel" role="tabpanel" aria-labelledby="tab-b2c">
+                <ol class="flow-steps" id="flow-steps"></ol>
+                <div class="flow-stage">
+                  <div class="kiosk" aria-hidden="true">
+                    <div class="kiosk-screen" id="kiosk-screen"></div>
+                    <div class="kiosk-base"><span></span><span></span></div>
+                  </div>
+                  <div class="flow-detail" aria-live="polite">
+                    <p class="flow-count" id="flow-count"></p>
+                    <h4 id="flow-title"></h4>
+                    <p id="flow-desc"></p>
+                    <p class="flow-tech" id="flow-tech"></p>
+                    <div class="flow-nav">
+                      <button class="btn btn-soft btn-sm" id="flow-prev" type="button">← Back</button>
+                      <button class="btn btn-primary btn-sm" id="flow-next" type="button">Next step →</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="fine-print" id="flow-note"></p>
+            </article>
+
+            <!-- 4. Hardware -->
+            <article class="chapter" id="ch-hardware" aria-labelledby="ch-hardware-t">
+              <p class="ch-num">Chapter 4</p>
+              <h3 id="ch-hardware-t">Hardware and Technology</h3>
+              <p class="ch-intro">Click any block in the system map to see what it does.</p>
+              <div class="diagram-scroll" tabindex="0" aria-label="System map, scrolls sideways on small screens">
+                <div class="hw-diagram" id="hw-diagram"></div>
+              </div>
+              <p class="swipe-hint hand" aria-hidden="true">swipe to see the whole map →</p>
+              <div class="hw-detail" id="hw-detail" aria-live="polite"></div>
+            </article>
+
+            <!-- 5. Software -->
+            <article class="chapter" id="ch-software" aria-labelledby="ch-software-t">
+              <p class="ch-num">Chapter 5</p>
+              <h3 id="ch-software-t">Software and Integration</h3>
+              <div class="prose" id="software-text"></div>
+              <ol class="stack" id="software-stack"></ol>
+            </article>
+
+            <!-- 6. Features -->
+            <article class="chapter" id="ch-features" aria-labelledby="ch-features-t">
+              <p class="ch-num">Chapter 6</p>
+              <h3 id="ch-features-t">Features</h3>
+              <div class="status-filter" id="feature-filter" role="group" aria-label="Filter features by status"></div>
+              <ul class="feature-grid" id="feature-grid"></ul>
+              <div class="denoms" id="denoms"></div>
+            </article>
+
+            <!-- 7. Process -->
+            <article class="chapter" id="ch-process" aria-labelledby="ch-process-t">
+              <p class="ch-num">Chapter 7</p>
+              <h3 id="ch-process-t">My Engineering Process</h3>
+              <div class="prose" id="process-text"></div>
+
+              <figure class="side-view">
+                <div class="diagram-scroll" tabindex="0" aria-label="Side view of the bill dispenser module">
+                  <div id="side-view"></div>
+                </div>
+                <figcaption>
+                  <button class="link-btn" id="sv-toggle" type="button" aria-pressed="false">Pause animation</button>
+                  <span id="sv-caption"></span>
+                </figcaption>
+              </figure>
+
+              <ol class="design-log" id="design-log"></ol>
+
+              <div class="spec-card">
+                <h4>Gear train spec <span class="mono-tag">Solid Edge Spur Gear Designer</span></h4>
+                <dl class="spec-list" id="gear-spec"></dl>
+              </div>
+
+              <div class="lessons" id="lessons"></div>
+            </article>
+
+            <!-- 8. Results -->
+            <article class="chapter" id="ch-results" aria-labelledby="ch-results-t">
+              <p class="ch-num">Chapter 8</p>
+              <h3 id="ch-results-t">Results and Testing</h3>
+              <p class="ch-intro" id="results-intro"></p>
+              <ul class="metric-grid" id="metric-grid"></ul>
+              <div class="table-scroll" tabindex="0">
+                <table class="test-table" id="test-table">
+                  <caption>Test log</caption>
+                  <thead><tr><th scope="col">Test</th><th scope="col">Trials</th><th scope="col">Result</th><th scope="col">Notes</th></tr></thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+              <blockquote class="feedback" id="feedback"></blockquote>
+            </article>
+
+            <!-- 9. Gallery -->
+            <article class="chapter" id="ch-gallery" aria-labelledby="ch-gallery-t">
+              <p class="ch-num">Chapter 9</p>
+              <h3 id="ch-gallery-t">Gallery</h3>
+              <p class="ch-intro">Click a photo to see it larger.</p>
+              <ul class="gallery" id="gallery"></ul>
+            </article>
+
+            <!-- 10. Contributions -->
+            <article class="chapter" id="ch-me" aria-labelledby="ch-me-t">
+              <p class="ch-num">Chapter 10</p>
+              <h3 id="ch-me-t">My Contributions</h3>
+              <div class="contrib" id="contrib"></div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <p class="eyebrow hand">other things I've made</p>
+        <h2 id="projects-title" class="section-title">Engineering Projects</h2>
+        <div class="filter-row" id="project-filter" role="group" aria-label="Filter projects"></div>
+        <ul class="project-grid" id="project-grid"></ul>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <p class="eyebrow hand">my toolbox</p>
+        <h2 id="skills-title" class="section-title">Skills and Technologies</h2>
+        <p class="section-intro">Click a skill to see where I've used it.</p>
+        <div class="skills-layout">
+          <div class="skill-tabs" id="skill-tabs" role="tablist" aria-label="Skill categories"></div>
+          <div class="skill-panel" id="skill-panel" role="tabpanel">
+            <ul class="skill-pills" id="skill-pills"></ul>
+            <div class="skill-used" id="skill-used" aria-live="polite"></div>
+          </div>
+        </div>
+
+        <h3 class="sub-title">Certifications</h3>
+        <ul class="cert-grid" id="cert-grid"></ul>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY ============ -->
+    <section class="section" id="journey" aria-labelledby="journey-title">
+      <div class="wrap journey-grid">
+        <div>
+          <p class="eyebrow hand">where I'm studying</p>
+          <h2 id="journey-title" class="section-title">Education and Journey</h2>
+          <div class="edu-card" id="edu-card"></div>
+        </div>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact-card">
+          <span class="tape tape-l" aria-hidden="true"></span>
+          <span class="tape tape-r" aria-hidden="true"></span>
+          <div class="contact-copy">
+            <p class="eyebrow hand">let's talk ♡</p>
+            <h2 id="contact-title" class="section-title">Say hello</h2>
+            <p id="contact-text"></p>
+            <div class="email-row">
+              <span class="email-text" id="email-text"></span>
+              <button class="btn btn-soft btn-sm" id="copy-email" type="button">Copy email</button>
+            </div>
+            <ul class="link-list" id="link-list"></ul>
+          </div>
+
+          <form class="note-form" id="note-form" novalidate>
+            <h3 class="hand">write me a note</h3>
+            <label for="note-name">Your name</label>
+            <input id="note-name" name="name" type="text" autocomplete="name" required>
+            <label for="note-msg">Message</label>
+            <textarea id="note-msg" name="message" rows="4" required></textarea>
+            <button class="btn btn-primary" type="submit">Open in my email app</button>
+            <p class="form-status" id="form-status" role="status"></p>
+            <p class="fine-print">This opens your own email app with the note filled in. Nothing is stored on this site.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Designed and built by <span data-bind="fullName">Nerrylle Faith Pabalan</span> · <span id="year">2026</span></p>
+      <p class="hand">made with ♡, solder, and a lot of debugging</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top">
+    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Project details dialog -->
+  <dialog class="modal" id="project-modal" aria-labelledby="pm-title">
+    <div class="modal-inner">
+      <button class="icon-btn modal-close" type="button" data-close aria-label="Close">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <div id="pm-body"></div>
+    </div>
+  </dialog>
+
+  <!-- Gallery lightbox -->
+  <dialog class="modal lightbox" id="lightbox" aria-label="Photo viewer">
+    <div class="modal-inner">
+      <button class="icon-btn modal-close" type="button" data-close aria-label="Close">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <figure class="lb-figure">
+        <div class="lb-img" id="lb-img"></div>
+        <figcaption id="lb-caption"></figcaption>
+      </figure>
+      <div class="lb-nav">
+        <button class="btn btn-soft btn-sm" id="lb-prev" type="button">← Previous</button>
+        <span class="lb-count" id="lb-count"></span>
+        <button class="btn btn-soft btn-sm" id="lb-next" type="button">Next →</button>
+      </div>
+    </div>
+  </dialog>
+
+  <noscript>
+    <p class="noscript">This portfolio uses JavaScript to show its content. Please turn JavaScript on to see the projects and thesis.</p>
+  </noscript>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
